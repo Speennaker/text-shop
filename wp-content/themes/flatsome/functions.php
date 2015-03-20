@@ -457,6 +457,6 @@ function new_logout_url($logouturl, $redir)
 	return $logouturl . '&amp;redirect_to=' . urlencode($redir);
 }
 
-
+remove_filter('the_content', 'wptexturize');
 
 ?>
