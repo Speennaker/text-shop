@@ -1,0 +1,151 @@
+.ux_banner-grid{margin-left: -7px!important;margin-right: -7px!important; margin-bottom: 20px!important }
+.ux_banner-grid .columns{margin-right: -1px!important}
+.ux_banner-grid .columns > div{margin-left: 7px!important;margin-right: 7px!important;}
+.ux_banner-grid .ux_banner{margin-bottom: 15px;display: block}
+.ux_banner-grid .columns > img{margin-bottom: 10px}
+#content > .ux_block > .ux_banner,#content > .ux_banner  {margin-bottom: 30px;}
+.ux_banner .inner.animated{opacity: 0}
+
+.ux_banner{background: $primary-color; line-height:140%;display: block;position: relative;overflow: hidden;-ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none;}
+.ux_banner.light{background:#f9f9f9;}
+.ux_banner .banner-bg, .ux_bg .banner-bg{@include single-transition(all,0.2s,ease-out); z-index:1; position: absolute;top:0;left:0;right: 0;bottom:0;background-size:cover; background-repeat: no-repeat; background-position:  50% 50%; -ms-behavior: url(backgroundsize.htc);}
+.ux_banner .banner-effect{position: absolute;  top:0;left:0;right:0;bottom:0; z-index: 1; overflow: hidden; background-color: transparent;}
+.ux_banner.full-height{height: 100vh!important;}
+
+.ux_banner .row{position: relative;height: 100%;z-index: 2;}
+.ux_banner .inner{white-space:normal;z-index: 3;position: absolute;left:10%;bottom:10%;right:10%;margin:0 auto;}
+
+.ux_bg{position: relative;overflow: hidden;}
+.ux_bg .banner-bg.ux_parallax,.ux_banner .banner-bg.ux_parallax{background-position: top; background-attachment:scroll!important; @include single-transition(opacity);opacity: 0;}
+.ux_bg .ux_bg_content{z-index:10; position:relative;}
+#content .slider .ux_bg{padding-left: 0!important;padding-right: 0!important}
+.ux_parallax.parallax-active{opacity: 1;}
+.parallax_img_inner{opacity: 0;@include single-transition(opacity);}
+.ux-bg-title{text-align: center;position: relative;bottom:-26px;z-index:99;}
+.ux-bg-title span{color:$primary-color;font-size: 80%;display: inline-block;background: #FFF;text-transform: uppercase;padding:5px 15px;border:2px solid $primary-color;}
+
+html[data-useragent*='iPad'] .ux_bg .banner-bg.ux_parallax, html[data-useragent*='iPad'] .ux_banner .banner-bg.ux_parallax,html[data-useragent*='iPhone'] .ux_bg .banner-bg.ux_parallax, html[data-useragent*='iPhone'] .ux_banner .banner-bg.ux_parallax{background-position:  50% 50%!important; background-size:cover!important; background-attachment:scroll!important;opacity:1!important}
+
+.ux_banner .button{margin: 15px 5px 10px 5px;}
+.ux_banner .text-right .button{margin: 15px 0 10px 10px;}
+.ux_banner .text-left .button{margin: 15px 10px 10px 0px;}
+
+.ux_banner .center{bottom:50%!important;top:auto!important;text-align: center;}
+.ux_banner .left{left:10%;right: auto;text-align: left;}
+.ux_banner .far-left{left:20px;right: auto;text-align: left;}
+
+.ux_banner .right{left:auto;right: 10%;text-align: right;}
+.ux_banner .far-right{left:auto;right: 20px;text-align: right;}
+
+.ux_banner .center .tx-div{margin: 0 auto}
+.ux_banner .left .tx-div, .ux_banner .far-left .tx-div{margin:0 auto 0 0;}
+.ux_banner .right .tx-div, .ux_banner .far-right .tx-div{margin:0 0 0 auto;}
+.ux_banner .text-center .tx-div {margin: 0 auto}
+.ux_banner .text-left .tx-div {margin: 0 auto 0 0}
+.ux_banner .text-right .tx-div {margin: 0 0 0 auto}
+.ux_banner .tx-div{margin-top:15px!important;margin-bottom: 15px!important;}
+
+.ux_banner .inner.top{top:12%!important;margin: 0 auto!important;bottom: auto!important;}
+.ux_banner .inner.bottom{bottom:12%!important;margin: 0 auto!important;top: auto!important;}
+.ux_banner .inner.far-bottom{bottom:0!important;top:auto!important;}
+.ux_banner .inner.far-top{top:0!important;bottom:auto!important;}
+.ux_banner .inner.full-width{left:0!important;right:0!important;width:100%!important}
+
+
+.text-box-dark:before{box-shadow: -10px 0px 0px #000;display:inline-block;width:10px;content: " ";};
+.text-box-dark{background: #000;color:#FFF;display: inline;line-height: 120%!important;box-shadow: 10px 0px 0px #000;}
+
+.text-box-light:before{box-shadow: -10px 0px 0px #FFF;display:inline-block;width:10px;content: " ";};
+.text-box-light{background: #FFF;color:#111;display: inline;line-height: 120%!important;box-shadow: 10px 0px 0px #FFF;}
+
+.text-box-primary{background: $primary-color;color:#fff;display: inline;line-height: 140%!important;}
+.text-box-dark:after,.text-box-light:after,.text-box-primary:after{visibility: hidden; display:block;font-size: 0!important; content: ""; clear: both; height: 0!important;}
+.dark .text-box-light{color: #000}
+
+.ux_banner .callout{left:auto;right:70px;top:30px;}
+.ux_banner .text-boxed{ -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);}
+
+/* -- UX texts -- */
+.ux_text{display: table;height:100%;width: 100%}
+.ux_text .inner{display: table-cell;height: 100%;vertical-align: middle}
+.ux_text.top .inner{vertical-align: top}
+.ux_text.bottom .inner{vertical-align: bottom}
+.ux_text.text-center{margin: 0 auto;}
+
+.text-bordered-white,.text-bordered-primary,.text-bordered-dark{border:3px solid #FFF; padding:15px;}
+.text-bordered-dark{border-color:#000}
+
+/* -- hover styles -- */
+.ux_banner .banner-bg{
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease-out;
+transition: all 0.5s ease-out;}
+
+/* -- hover style : fade effect --*/
+.ux_banner.hover_fade:hover .banner-bg{opacity: 0.3};
+
+/* -- hover style : hover zoom --*/
+.ux_banner.hover_zoom:hover .banner-bg{
+	opacity: 0.4;
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+transform: scale(1.25);
+};
+
+
+
+
+/* -- font sizes -- */
+.ux_banner h1,.ux_text h1{font-weight:bolder;font-size: 350%;line-height: 100%;margin: 7px 0}
+.ux_banner h2,.ux_text h2{font-size: 300%;line-height: 100%;margin:7px 0}
+.ux_banner h3,.ux_text h3{font-size: 200%;line-height: 100%;margin:7px 0}
+.ux_banner h4,.ux_text h4{font-size: 150%;line-height: 100%;margin:7px 0}
+.ux_banner h5,.ux_text h5{font-size: 100%;line-height: 100%;margin:7px 0}
+.ux_banner h6,.ux_text h6{font-size: 60%;line-height: 100%;margin:7px 0}
+.ux_banner p{font-size: 60%;line-height: 120%}
+
+.ux_banner h1.h-large,.ux_text h1.h-large{font-size: 650%;line-height: 85%;padding: 0px!important}
+.ux_banner h1.h-xlarge,.ux_text h1.h-xlarge{font-size: 1200%;line-height: 85%;padding: 0px!important;}
+.ux_banner h1.h-xxlarge,.ux_text h1.h-xxlarge{font-size: 1500%;line-height: 85%;padding: 0px!important;}
+
+.large-1 .ux_banner,.large-2 .ux_banner{font-size: 6px;}
+.large-3 .ux_banner{font-size: 8px;}
+.large-4 .ux_banner{font-size: 8px;}
+#welcome-popup .ux_banner,.large-5 .ux_banner{font-size: 13px;}
+.large-6 .ux_banner{font-size: 14px;}
+.large-7 .ux_banner{font-size: 14px;}
+.large-8 .ux_banner{font-size: 14px;}
+.large-9 .ux_banner{font-size: 14px;}
+
+.large-1 .ux_banner .button, .large-2 .ux_banner .button, 
+.large-3 .ux_banner .button, .large-4 .ux_banner .button{font-size: 140%}
+
+
+/* smaller font sizes on small columns */
+@media only screen and (max-width:500px){
+.ux_banner .inner{min-width: 60%!important}
+.ux_banner .button-row .button{display: block;margin: 0 0 5px}
+.ux_banner{font-size: 9px}
+.ux_banner p, .ux_banner .button{font-size: 130%}
+}
+
+@media only screen and (min-width:500px){
+.ux_banner{font-size: 10px}
+.ux_banner p, .ux_banner .button{font-size: 130%}
+}
+
+@media only screen and (min-width:600px){
+.ux_banner{font-size: 12px}
+.ux_banner p, .ux_banner .button{font-size: 120%}
+}
+
+@media only screen and (min-width:$small-screen){
+.ux_banner{font-size: 16px}
+.ux_banner p, .ux_banner .button{font-size: 90%}
+}
+/* mobile fixes */
+@media #{$mobile} {
+	.ux_bg .banner-bg, .ux_banner .banner-bg{margin-top:0!important;-webkit-transform: none!important; -moz-transform: none!important; -o-transform: none!important; transform: none!important;opacity: 1!important}
+	.row.container > .columns{margin-bottom: 15px}
+}
