@@ -59,6 +59,7 @@ function followShortcode($atts, $content = null) {
 		'linkedin' => '',
 		'youtube' => '',
 		'flickr' => '',
+        'vk' => '',
 	), $atts));
 	ob_start();
 	?>
@@ -70,7 +71,7 @@ function followShortcode($atts, $content = null) {
 		<?php }?>
 
     	<?php if($facebook){?>
-    	<a href="<?php echo $facebook; ?>" target="_blank"  class="icon icon_facebook tip-<?php echo $tooltip; ?>" title="<?php _e('Follow us on Facebook','flatsome') ?>"><span class="icon-facebook"></span></a>
+    	<a href="<?php echo $facebook; ?>" target="_blank"  class="icon icon_facebook tip-<?php echo $tooltip; ?>" title="<?php _e('Мы на Facebook','flatsome') ?>"><span class="icon-facebook"></span></a>
 		<?php }?>
 		<?php if($twitter){?>
 		       <a href="<?php echo $twitter; ?>" target="_blank" class="icon icon_twitter tip-<?php echo $tooltip; ?>" title="<?php _e('Follow us on Twitter','flatsome') ?>"><span class="icon-twitter"></span></a>
@@ -99,6 +100,9 @@ function followShortcode($atts, $content = null) {
 		<?php if($flickr){?>
 		       <a href="<?php echo $flickr; ?>" target="_blank" class="icon icon_flickr tip-<?php echo $tooltip; ?>" title="<?php _e('Flickr','flatsome') ?>"><span class="icon-flickr"></span></a>
 		<?php }?>
+        <?php if($vk){?>
+            <a href="<?php echo $vk; ?>" target="_blank" class="icon icon_vk tip-<?php echo $tooltip; ?>" title="<?php _e('Мы ВКонтакте','flatsome') ?>"><span class="icon-vk"></span></a>
+        <?php }?>
      </div>
     	
 

@@ -65,7 +65,7 @@ function flatsome_register_required_plugins() {
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 		),
 
-		
+
 		array(
 			'name'     				=> 'Taxonomy Metadata', // The plugin name
 			'slug'     				=> 'taxonomy-metadata', // The plugin slug (typically the folder name)
@@ -76,7 +76,7 @@ function flatsome_register_required_plugins() {
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 		),
-		
+
 		array(
 			'name'     				=> 'Unlimited Sidebars Woosidebars', // The plugin name
 			'slug'     				=> 'woosidebars', // The plugin slug (typically the folder name)
@@ -87,7 +87,7 @@ function flatsome_register_required_plugins() {
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 		),
-		
+
 		array(
 			'name'     				=> 'Envato Toolkit', // The plugin name
 			'slug'     				=> 'envato-wordpress-toolkit-master', // The plugin slug (typically the folder name)
@@ -98,7 +98,7 @@ function flatsome_register_required_plugins() {
 			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 		),
-		
+
 		array(
 			'name'     				=> 'YITH WooCommerce Ajax Search', // The plugin name
 			'slug'     				=> 'yith-woocommerce-ajax-search', // The plugin slug (typically the folder name)
@@ -288,7 +288,7 @@ include_once('inc/widgets/upsell-widget.php'); // Load Upsell widget
  * Enqueue scripts and styles
  */
 function flatsome_scripts() {
-	
+
 	global $flatsome_opt;
 
 	/* styles */
@@ -296,7 +296,7 @@ function flatsome_scripts() {
 	wp_enqueue_style( 'flatsome-animations', get_template_directory_uri() .'/css/animations.css', array(), '1.9.9.5', 'all' );
 
 	/* main style */
-	wp_enqueue_style( 'flatsome-style', get_stylesheet_uri(), array(), '1.9.9.5', 'all');	
+	wp_enqueue_style( 'flatsome-style', get_stylesheet_uri(), array(), '1.9.9.5', 'all');
 
 	/* JS libaries */
 	wp_enqueue_script( 'flatsome-modernizer', get_template_directory_uri() .'/js/modernizr.js?v=1.9.9.5', array( 'jquery' ), '20120202', true );
@@ -304,19 +304,19 @@ function flatsome_scripts() {
 	wp_enqueue_script( 'flatsome-iosslider', get_template_directory_uri() .'/js/jquery.iosslider.min.js?v=1.9.9.5', array( 'jquery' ), '20120202', true );
 	wp_enqueue_script( 'flatsome-magnific-popup', get_template_directory_uri() .'/js/jquery.magnific-popup.js?v=1.9.9.5', array( 'jquery' ), '20120202', true );
 	wp_enqueue_script( 'flatsome-theme-js', get_template_directory_uri() .'/js/theme.js?v=1.9.9.5', array( 'jquery' ), '20120202', true );
-	
+
 
 	/* Remove styles included plugins have added */
 	wp_deregister_style('yith-wcwl-font-awesome');
 	wp_deregister_style('yith-wcwl-font-awesome-ie7');
 	wp_deregister_style('yith-wcwl-main');
 	wp_deregister_style('nextend_fb_connect_stylesheet');
-	
-	
+
+
 	if ( ! is_admin() ) {
-	wp_deregister_style('woocommerce-layout');	
-	wp_deregister_style('woocommerce-smallscreen');	
-	wp_deregister_style('woocommerce-general');	
+	wp_deregister_style('woocommerce-layout');
+	wp_deregister_style('woocommerce-smallscreen');
+	wp_deregister_style('woocommerce-general');
 	}
 
 
@@ -337,7 +337,7 @@ function flatsome_admin_bar_render() {
 if (current_user_can( 'manage_options' ) ){
  $optionUrl = get_admin_url().'themes.php?page=optionsframework';
  $blocks_url = get_post_type_archive_link( 'blocks' );
- 
+
  $wp_admin_bar->add_menu( array(
  'parent' => false,
  'id' => 'theme_options',
@@ -458,5 +458,13 @@ function new_logout_url($logouturl, $redir)
 }
 
 remove_filter('the_content', 'wptexturize');
-
+function customs_social()
+{
+    echo '<div class="custom_socials">
+    <a class="fb_custom_icon" target="_blank" href="#"></a>
+     <a class="vk_custom_icon" target="_blank" href="#"></a>
+    </div>
+    ';
+}
+add_shortcode('custom_social', 'customs_social');
 ?>

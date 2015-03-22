@@ -626,6 +626,9 @@ table {
   background-color: #e5086f;
   border-color: #e5086f; }
 
+.social-icons .icon.icon_vk:hover {
+    background-color: #2478ba;
+    border-color: #2478ba; }
 #top-bar .social-icons .icon:hover {
   background-color: transparent !important;
   text-decoration: none; }

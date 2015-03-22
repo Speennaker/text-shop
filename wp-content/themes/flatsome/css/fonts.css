@@ -10,7 +10,7 @@
 	font-style: normal;
 }
 
-.header-nav a.nav-top-link.icon-search, .nav-top-link.icon-search,.icon-angle-left, .icon-angle-right, .icon-angle-up, .icon-angle-down, .icon-twitter, .icon-heart, .icon-envelop, .icon-tag, .icon-star, .icon-star-2, .icon-star-3, .icon-facebook, .icon-feed, .icon-close, .icon-checkmark, .icon-menu, .icon-plus, .icon-minus, .icon-instagram, .icon-google-plus, .icon-pinterest, .icon-search, .icon-skype, .icon-dribbble, .icon-users, .icon-certificate, .icon-expand, .icon-linkedin, .icon-map-pin-fill, .icon-pen-alt-fill, .icon-youtube, .icon-flickr, .icon-clock, .icon-inner {
+.header-nav a.nav-top-link.icon-search, .nav-top-link.icon-search,.icon-angle-left, .icon-angle-right, .icon-angle-up, .icon-angle-down, .icon-twitter, .icon-heart, .icon-envelop, .icon-tag, .icon-star, .icon-star-2, .icon-star-3, .icon-facebook, .icon-feed, .icon-close, .icon-checkmark, .icon-menu, .icon-plus, .icon-minus, .icon-instagram, .icon-google-plus, .icon-pinterest, .icon-search, .icon-skype, .icon-dribbble, .icon-users, .icon-certificate, .icon-expand, .icon-linkedin, .icon-map-pin-fill, .icon-pen-alt-fill, .icon-youtube, .icon-flickr, .icon-vk, .icon-clock, .icon-inner {
 	font-family: 'icomoon'!important;
 	speak: none!important;
 	font-style: normal!important;
@@ -115,6 +115,14 @@
 }
 .icon-flickr:before {
 	content: "\e019"!important;
+}
+
+.icon-vk:before {
+    content: "B"!important;
+    font-family: Tahoma;
+    font-size: 16px;
+    padding: 0 2px 0 4px !important;
+    font-weight: bold;
 }
 .icon-clock:before {
 	content: "\e01a"!important;
